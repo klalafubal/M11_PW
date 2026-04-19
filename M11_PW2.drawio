@@ -1,9 +1,71 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Страница-1" id="-XWgx4qEXV1TT5YpLlX5">
-    <mxGraphModel>
+  <diagram name="UML Component Diagram - Online Banking" id="-XWgx4qEXV1TT5YpLlX5">
+    <mxGraphModel dx="1285" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NpIp3Lse6xjmEk6nq390-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" value="Система онлайн-банкинга" vertex="1">
+          <mxGeometry height="30" width="600" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-44" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="«component»&#xa;Веб-приложение" vertex="1">
+          <mxGeometry height="70" width="160" x="400" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-45" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="«component»&#xa;Мобильное приложение" vertex="1">
+          <mxGeometry height="70" width="160" x="400" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-46" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="«component»&#xa;Backend Сервер&#xa;(Логика приложения)" vertex="1">
+          <mxGeometry height="100" width="200" x="720" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-47" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="«component»&#xa;База данных&#xa;(SQL/NoSQL)" vertex="1">
+          <mxGeometry height="70" width="160" x="740" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-48" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="«component»&#xa;Система авторизации&#xa;(OAuth2/2FA)" vertex="1">
+          <mxGeometry height="70" width="160" x="740" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-49" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="«component»&#xa;Платежный шлюз" vertex="1">
+          <mxGeometry height="70" width="160" x="1080" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-50" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="«component»&#xa;Система уведомлений" vertex="1">
+          <mxGeometry height="70" width="160" x="400" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-51" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="«component»&#xa;Модуль аналитики" vertex="1">
+          <mxGeometry height="70" width="160" x="1080" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-52" parent="1" style="shape=component;align=left;spacingLeft=36;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" value="«component»&#xa;Система мониторинга" vertex="1">
+          <mxGeometry height="70" width="160" x="1080" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-53" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" value="«external»&#xa;Внешние банки /&#xa;Провайдеры услуг" vertex="1">
+          <mxGeometry height="100" width="170" x="1320" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-54" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-44" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.25;entryDx=0;entryDy=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-46" value="REST API / GraphQL">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-55" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-45" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.75;entryDx=0;entryDy=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-46" value="REST API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-56" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-46" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-47" value="SQL / ORM">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-57" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-46" style="endArrow=block;endFill=1;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;rounded=0;" target="NpIp3Lse6xjmEk6nq390-48" value="Token Auth">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-58" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-46" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" target="NpIp3Lse6xjmEk6nq390-49" value="Payment API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-59" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-46" style="endArrow=block;endFill=1;html=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-50" value="SMS/Email API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-60" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-46" style="endArrow=block;endFill=1;html=1;exitX=0.75;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-51" value="Data Export">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-61" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-49" style="endArrow=block;endFill=1;html=1;exitX=1;exitY=0.5;entryX=0.07;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-53" value="ISO 8583 / API">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NpIp3Lse6xjmEk6nq390-62" edge="1" parent="1" source="NpIp3Lse6xjmEk6nq390-52" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0;rounded=0;" target="NpIp3Lse6xjmEk6nq390-46" value="Health Check">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
